@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>google review</title>
+</head>
+<body>
+Review google
+{% for reviews in questions %}
+{% if reviews.review_Category == 'G' %}
+<h3><p style="text-align:center;">{{ reviews.review }}</p></h3>
+{{form.errors}}
+{% endif %}
+{% endfor %}
+</body>
+</html>

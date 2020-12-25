@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>update todo</title>
+</head>
+<body>
+
+<form method="post">
+    {% csrf_token %}
+    {{form.title}}
+    {{form.complated}}
+    <input type="submit" name="submit">
+
+
+
+</form>
+
+
+</body>
+</html>
