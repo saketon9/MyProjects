@@ -1,0 +1,7 @@
+version: '3'
+services:
+    python:
+        image: python:3.6
+        volumes:
+            - ./app:/app
+        command: cd /mysite && pip install -r requirements.txt && python3 manage.py runserver
